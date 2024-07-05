@@ -1,0 +1,86 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #666;
+  font-weight: bold;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input:focus, select:focus {
+  border-color: #6a11cb;
+  outline: none;
+}
+
+button {
+  background-color: #6a11cb;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #2575fc;
+}
+
+#passwordStrength {
+  font-size: 14px;
+  color: #ff6f61;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  .container {
+      padding: 20px;
+  }
+}
